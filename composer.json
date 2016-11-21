@@ -1,0 +1,10 @@
+{
+    "name": "lemonadezz/basebox",
+    "authors": [
+        {
+            "name": "lemonade",
+            "email": "lemonade@jingdor.com"
+        }
+    ],
+    "require": {}
+}
