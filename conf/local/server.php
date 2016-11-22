@@ -6,5 +6,5 @@ return [
   'max_request'=>50,
   'dispatch_mode'=>1,
   'log_file'=>'./log/server.log',
-  'daemonize'=>0
+  'daemonize'=>1
 ];
