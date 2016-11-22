@@ -17,4 +17,5 @@ function dd($p){
 }
 
 function logstr($p){
+  echo "[".date('Y-m-d H:i:s',time())."] "."$p\n";
 }
