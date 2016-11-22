@@ -1,5 +1,5 @@
 <?php
 return [
-  'debug'=>"true",
-  'environmental'=>"local"
+  'debug'=>"true",       //调试模式
+  'environment'=>"local" //当前环境
 ];
