@@ -1,0 +1,4 @@
+#!/usr/bin/sh
+echo "生成适配器: $1";
+mkdir $1;
+touch "$1/$1.php";

@@ -12,7 +12,9 @@ $apiGateway->set(include __ENV__.'/server.php');
 $apiGateway->on('Request',function($req,$res){
 //  var_dump($req->server['request_method']);
   logstr($req->server['request_method'].' '.$req->server['request_uri']);
-    $res->end('apigateway'.date('Y-m-d H:i:s',time()));
+    $data=[];
+    $data=\adapter\Dispatch\Dispatch::run();
+    $res->end($data);
 });
 
 if(env('debug')){

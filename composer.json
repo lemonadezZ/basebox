@@ -1,10 +1,19 @@
 {
-    "name": "lemonadezz/basebox",
-    "authors": [
-        {
-            "name": "lemonade",
-            "email": "lemonade@jingdor.com"
-        }
-    ],
-    "require": {}
+  "name": "lemonadezz/basebox",
+  "authors": [
+  {
+    "name": "lemonade",
+    "email": "lemonade@jingdor.com"
+  }
+  ],
+    "require": {},
+    "autoload": {
+      "psr-4": {
+        "Api\\": "api/",
+        "adapter\\":"adapter/"
+      },
+      "files":[
+        ]
+
+    }
 }
