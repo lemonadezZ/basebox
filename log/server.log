@@ -111,3 +111,5 @@ Stack trace:
 [2016-11-23 04:23:26] GET /favicon.ico
 [2016-11-23 04:23:28] GET /api/v1/user
 [2016-11-23 04:23:28] GET /favicon.ico
+[2016-11-23 04:23:53] GET /api/v1/user
+[2016-11-23 04:23:54] GET /favicon.ico

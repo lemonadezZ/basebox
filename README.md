@@ -2,7 +2,7 @@
 Api gateway
 
 # run
-./server.php
+./boot
 
 
 # TODO LIST
