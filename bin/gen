@@ -1,0 +1,18 @@
+#!/usr/bin/python
+# coding:utf-8
+
+import sys
+
+class Generator:
+  def ___init__(self):
+      pass
+  def run(self):
+      self.parseCmd()
+  def parseCmd(self):
+    for i in sys.argv:
+        print i
+  def helpinfo(self):
+      
+
+gen=Generator()
+gen.run()
