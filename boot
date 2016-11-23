@@ -13,7 +13,7 @@ $apiGateway->on('Request',function($req,$res){
 //  var_dump($req->server['request_method']);
   logstr($req->server['request_method'].' '.$req->server['request_uri']);
     $data=[];
-    $data=\adapter\Dispatch\Dispatch::run();
+    $data=Api\V0\User::Get();
     $res->end($data);
 });
 
