@@ -6,13 +6,13 @@ Api gateway
 
 #
 ```
-gen -l 
-gen -l v1
-gen -doc 
+gen -li       //当前api列表
+gen -lv       //版本列表
+gen -doc      //生成文档
 gen -cv v1    //创建版本
 gen -ci home  //创建home api
-gen set
-gen get 
+gen set       //设置变量
+gen get       //获取设置
 gen -h
 
 ```
