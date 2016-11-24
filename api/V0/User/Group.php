@@ -5,7 +5,7 @@ namespace  Api\V0\User;
 class Group extends \Api\Api {
 
   static function Get(){
-      return json_encode([]);
+      return "success";
   }
 
   static function Post(){

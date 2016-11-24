@@ -30,12 +30,12 @@ $apiGateway->on('Request',function($req,$res){
   },explode('/',$req->server['request_uri'])));
   $method=$req->server['request_method'];
   if(!class_exists($class)){
-      $res->end(Adapter\Response\Response::fail());
+      return $res->end(Adapter\Response\Response::fail());
   }
   if(!method_exists($class,$method)){
-      return [];
+      return $res->end(Adapter\Response\Response::fail());
   }
-  $data=$class::$method();
+  $data=Adapter\Response\Response::success($class::$method());
   $res->end($data);
 });
 

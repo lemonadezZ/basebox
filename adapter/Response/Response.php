@@ -5,6 +5,11 @@ class Response
 {
   static $code=1;
   static $body="";
+  static $is_end=1;
+  //响应初始化
+  static function init(){
+  
+  }
   static function fail($msg=""){
     return self::encode(['code'=>1,'msg'=>$msg]);
   }
