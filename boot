@@ -1,12 +1,23 @@
 #!/usr/bin/env php
 <?php
 
-include 'include.php';
+include './vendor/autoload.php';
 
-$apiGateway = new Swoole\Http\Server(env('bind_address'),env('port'));
+define ('__ENV__',__CONF__.'/'.conf('environment'));
+
+$apiGateway = new Swoole\Http\Server(conf('bind_address'),conf('port'));
 
 //api 设置
 $apiGateway->set(include __ENV__.'/server.php');
+
+//启动服务
+$apiGateway->on('Start',function()use($apiGateway){
+  file_put_contents(__ROOT__.'/tmp/master_pid',$apiGateway->master_pid);
+});
+//关闭服务
+$apiGateway->on('Shutdown',function()use($apiGateway){
+  unlink(__ROOT__.'/tmp/master_pid');
+});
 
 //开始调度监听
 $apiGateway->on('Request',function($req,$res){
@@ -17,10 +28,11 @@ $apiGateway->on('Request',function($req,$res){
     $res->end($data);
 });
 
-if(env('debug')){
+if(conf('debug')){
   logstr("启动前预处理");
   include __ROOT__.'/prestart.php';
-  logstr("启动服务器".env('bind_address').':'.env('port')."");
+  logstr("启动服务器".conf('bind_address').':'.conf('port')."");
+  logstr("预览:".conf('server').':'.conf('port')."");
 }
 //启动服务器
 $apiGateway->start();

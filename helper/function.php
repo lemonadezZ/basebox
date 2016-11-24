@@ -1,6 +1,6 @@
 <?php
 
-function env($str){
+function conf($str){
   static $conf=null;
   if(is_null($conf)){
     //加载默认配置文件

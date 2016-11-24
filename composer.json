@@ -13,6 +13,8 @@
         "adapter\\":"adapter/"
       },
       "files":[
+        "include.php",
+        "helper/function.php"
         ]
 
     }
