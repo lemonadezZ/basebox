@@ -21,11 +21,22 @@ $apiGateway->on('Shutdown',function()use($apiGateway){
 
 //开始调度监听
 $apiGateway->on('Request',function($req,$res){
-//  var_dump($req->server['request_method']);
+  //  var_dump($req->server['request_method']);
   logstr($req->server['request_method'].' '.$req->server['request_uri']);
-    $data=[];
-    $data=Api\V0\User::Get();
-    $res->end($data);
+  $data=[];
+  //   $class=str_replace('/','\\',$req->server['request_uri']);
+  $class=implode('\\',array_map(function($e){
+    return ucfirst(strtolower($e));
+  },explode('/',$req->server['request_uri'])));
+  $method=$req->server['request_method'];
+  if(!class_exists($class)){
+      $res->end(Adapter\Response\Response::fail());
+  }
+  if(!method_exists($class,$method)){
+      return [];
+  }
+  $data=$class::$method();
+  $res->end($data);
 });
 
 if(conf('debug')){

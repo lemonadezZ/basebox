@@ -12,7 +12,7 @@ class Generator:
     for i in sys.argv:
         print i
   def helpinfo(self):
-      
+     pass 
 
 gen=Generator()
 gen.run()

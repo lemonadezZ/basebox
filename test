@@ -1,0 +1,7 @@
+#!/usr/bin/php
+<?php
+include "vendor/autoload.php";
+
+echo \Api\V0\User\Group::Get();
+
+echo \Adapter\Response\Response::fail();

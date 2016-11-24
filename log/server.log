@@ -141,3 +141,108 @@ Stack trace:
 [2016-11-24 12:30:02] GET /
 [2016-11-24 12:30:03] GET /favicon.ico
 [2016-11-24 20:31:02 #3647.0]	NOTICE	Server is shutdown now.
+[2016-11-24 20:49:24 *4178.0]	ERROR	zm_deactivate_swoole (ERROR 103): Fatal error: Uncaught Error: Class 'api\v1\user/group' not found in /var/www/basebox/boot:35
+Stack trace:
+#0 [internal function]: {closure}(Object(swoole_http_request), Object(swoole_http_response))
+#1 /var/www/basebox/boot(46): swoole_http_server->start()
+#2 {main}
+  thrown in /var/www/basebox/boot on line 35.
+[2016-11-24 20:49:24 $4176.0]	WARNING	swManager_check_exit_status: worker#0 abnormal exit, status=255, signal=0
+[2016-11-24 20:49:53 *4185.0]	ERROR	zm_deactivate_swoole (ERROR 103): Fatal error: Uncaught Error: Class 'api\v1\user/group' not found in /var/www/basebox/boot:35
+Stack trace:
+#0 [internal function]: {closure}(Object(swoole_http_request), Object(swoole_http_response))
+#1 /var/www/basebox/boot(46): swoole_http_server->start()
+#2 {main}
+  thrown in /var/www/basebox/boot on line 35.
+[2016-11-24 20:49:53 $4183.0]	WARNING	swManager_check_exit_status: worker#0 abnormal exit, status=255, signal=0
+[2016-11-24 20:50:42 *4198.0]	ERROR	zm_deactivate_swoole (ERROR 103): Fatal error: Uncaught Error: Class 'api\v1\user/group' not found in /var/www/basebox/boot:34
+Stack trace:
+#0 [internal function]: {closure}(Object(swoole_http_request), Object(swoole_http_response))
+#1 /var/www/basebox/boot(45): swoole_http_server->start()
+#2 {main}
+  thrown in /var/www/basebox/boot on line 34.
+[2016-11-24 20:50:42 $4196.0]	WARNING	swManager_check_exit_status: worker#0 abnormal exit, status=255, signal=0
+[2016-11-24 20:51:01 *4199.0]	ERROR	zm_deactivate_swoole (ERROR 103): Fatal error: Uncaught Error: Class 'api\v0\user/group' not found in /var/www/basebox/boot:34
+Stack trace:
+#0 [internal function]: {closure}(Object(swoole_http_request), Object(swoole_http_response))
+#1 /var/www/basebox/boot(45): swoole_http_server->start()
+#2 {main}
+  thrown in /var/www/basebox/boot on line 34.
+[2016-11-24 20:51:01 $4196.0]	WARNING	swManager_check_exit_status: worker#0 abnormal exit, status=255, signal=0
+[2016-11-24 20:52:48 *4207.0]	ERROR	zm_deactivate_swoole (ERROR 103): Fatal error: Uncaught Error: Class '\api\v0\user\group' not found in /var/www/basebox/boot:29
+Stack trace:
+#0 [internal function]: {closure}(Object(swoole_http_request), Object(swoole_http_response))
+#1 /var/www/basebox/boot(40): swoole_http_server->start()
+#2 {main}
+  thrown in /var/www/basebox/boot on line 29.
+[2016-11-24 20:52:48 $4205.0]	WARNING	swManager_check_exit_status: worker#0 abnormal exit, status=255, signal=0
+[2016-11-24 20:53:43 *4444.0]	ERROR	zm_deactivate_swoole (ERROR 103): Fatal error: Uncaught Error: Class '\api\v0\user\group' not found in /var/www/basebox/boot:29
+Stack trace:
+#0 [internal function]: {closure}(Object(swoole_http_request), Object(swoole_http_response))
+#1 /var/www/basebox/boot(40): swoole_http_server->start()
+#2 {main}
+  thrown in /var/www/basebox/boot on line 29.
+[2016-11-24 20:53:43 $4442.0]	WARNING	swManager_check_exit_status: worker#0 abnormal exit, status=255, signal=0
+[2016-11-24 20:54:52 *4618.0]	ERROR	zm_deactivate_swoole (ERROR 103): Fatal error: Uncaught Error: Class '\api\v0\user\group' not found in /var/www/basebox/boot:29
+Stack trace:
+#0 [internal function]: {closure}(Object(swoole_http_request), Object(swoole_http_response))
+#1 /var/www/basebox/boot(40): swoole_http_server->start()
+#2 {main}
+  thrown in /var/www/basebox/boot on line 29.
+[2016-11-24 20:54:52 $4616.0]	WARNING	swManager_check_exit_status: worker#0 abnormal exit, status=255, signal=0
+[2016-11-24 20:55:59 *4664.0]	ERROR	zm_deactivate_swoole (ERROR 103): Fatal error: Uncaught Error: Class '\api\v0\user\group' not found in /var/www/basebox/boot:29
+Stack trace:
+#0 [internal function]: {closure}(Object(swoole_http_request), Object(swoole_http_response))
+#1 /var/www/basebox/boot(40): swoole_http_server->start()
+#2 {main}
+  thrown in /var/www/basebox/boot on line 29.
+[2016-11-24 20:55:59 $4662.0]	WARNING	swManager_check_exit_status: worker#0 abnormal exit, status=255, signal=0
+[2016-11-24 21:03:25 *4770.0]	ERROR	zm_deactivate_swoole (ERROR 103): Fatal error: Uncaught Error: Class '/api/v0/user/group' not found in /var/www/basebox/boot:32
+Stack trace:
+#0 [internal function]: {closure}(Object(swoole_http_request), Object(swoole_http_response))
+#1 /var/www/basebox/boot(43): swoole_http_server->start()
+#2 {main}
+  thrown in /var/www/basebox/boot on line 32.
+[2016-11-24 21:03:25 $4768.0]	WARNING	swManager_check_exit_status: worker#0 abnormal exit, status=255, signal=0
+[2016-11-24 21:04:09 *4777.0]	ERROR	zm_deactivate_swoole (ERROR 103): Fatal error: Uncaught Error: Class '/api/v0/user/group' not found in /var/www/basebox/boot:33
+Stack trace:
+#0 [internal function]: {closure}(Object(swoole_http_request), Object(swoole_http_response))
+#1 /var/www/basebox/boot(44): swoole_http_server->start()
+#2 {main}
+  thrown in /var/www/basebox/boot on line 33.
+[2016-11-24 21:04:09 $4775.0]	WARNING	swManager_check_exit_status: worker#0 abnormal exit, status=255, signal=0
+[2016-11-24 21:04:58 *4784.0]	ERROR	zm_deactivate_swoole (ERROR 103): Fatal error: Uncaught Error: Function name must be a string in /var/www/basebox/boot:33
+Stack trace:
+#0 [internal function]: {closure}(Object(swoole_http_request), Object(swoole_http_response))
+#1 /var/www/basebox/boot(44): swoole_http_server->start()
+#2 {main}
+  thrown in /var/www/basebox/boot on line 33.
+[2016-11-24 21:04:58 $4782.0]	WARNING	swManager_check_exit_status: worker#0 abnormal exit, status=255, signal=0
+[2016-11-24 21:05:37 *4792.0]	ERROR	zm_deactivate_swoole (ERROR 103): Fatal error: Uncaught Error: Class '\Favicon.ico' not found in /var/www/basebox/boot:33
+Stack trace:
+#0 [internal function]: {closure}(Object(swoole_http_request), Object(swoole_http_response))
+#1 /var/www/basebox/boot(44): swoole_http_server->start()
+#2 {main}
+  thrown in /var/www/basebox/boot on line 33.
+[2016-11-24 21:05:37 $4790.0]	WARNING	swManager_check_exit_status: worker#0 abnormal exit, status=255, signal=0
+[2016-11-24 21:05:43 *4793.0]	ERROR	zm_deactivate_swoole (ERROR 103): Fatal error: Uncaught Error: Class '\Favicon.ico' not found in /var/www/basebox/boot:33
+Stack trace:
+#0 [internal function]: {closure}(Object(swoole_http_request), Object(swoole_http_response))
+#1 /var/www/basebox/boot(44): swoole_http_server->start()
+#2 {main}
+  thrown in /var/www/basebox/boot on line 33.
+[2016-11-24 21:05:43 $4790.0]	WARNING	swManager_check_exit_status: worker#0 abnormal exit, status=255, signal=0
+[2016-11-24 21:05:45 *4794.0]	ERROR	zm_deactivate_swoole (ERROR 103): Fatal error: Uncaught Error: Class '\Favicon.ico' not found in /var/www/basebox/boot:33
+Stack trace:
+#0 [internal function]: {closure}(Object(swoole_http_request), Object(swoole_http_response))
+#1 /var/www/basebox/boot(44): swoole_http_server->start()
+#2 {main}
+  thrown in /var/www/basebox/boot on line 33.
+[2016-11-24 21:05:45 $4790.0]	WARNING	swManager_check_exit_status: worker#0 abnormal exit, status=255, signal=0
+[2016-11-24 21:22:06 *5225.0]	ERROR	zm_deactivate_swoole (ERROR 103): Fatal error: Uncaught Error: Class 'Adapter\Response\Response' not found in /var/www/basebox/boot:33
+Stack trace:
+#0 [internal function]: {closure}(Object(swoole_http_request), Object(swoole_http_response))
+#1 /var/www/basebox/boot(49): swoole_http_server->start()
+#2 {main}
+  thrown in /var/www/basebox/boot on line 33.
+[2016-11-24 21:22:06 $5223.0]	WARNING	swManager_check_exit_status: worker#0 abnormal exit, status=255, signal=0
